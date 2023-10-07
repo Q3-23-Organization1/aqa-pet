@@ -9,10 +9,10 @@ public class TableOfValues {
         int j = 0;
 
         for (int i = 0; i < array.length; i++) {
-            array[i] =  Math.sin(i);
+            array[i] = Math.sin(j);
             System.out.println("sin(" + j + ") = " + array[i]);
 
-            j = j+ 10;
+            j = j + 10;
         }
     }
 }

@@ -5,23 +5,22 @@ public class FindMaxMinValue {
     //2. Написати програму, яка знаходить мінімальне і максимальне число в масиві.
     static void findMaxMinValue(int[] array) {
 
-//        System.out.println(Arrays.stream(array).max());
-//        System.out.println(Arrays.stream(array).min());
+//      System.out.println(Arrays.stream(array).max());
+//      System.out.println(Arrays.stream(array).min());
 
-        int max = 0;
-        int min = 0;
+        int max = array[0];
+        int min = array[0];
 
-        for (int i = 0; i < array.length - 1; i++) {
+        for (int i = 1; i < array.length; i++) {
 
-            if (array[i] > array[i + 1] && array[i] > max) {
+            if (array[i] > max) {
                 max = array[i];
-            } else if (array[i] < array[i + 1] && array[i] < min) {
+            } else if (array[i] < min) {
                 min = array[i];
             }
         }
 
         System.out.println("max " + max);
         System.out.println("min " + min);
-
     }
 }
