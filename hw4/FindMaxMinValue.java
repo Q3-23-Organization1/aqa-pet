@@ -1,5 +1,7 @@
 package hw4;
 
+import java.util.Arrays;
+
 public class FindMaxMinValue {
 
     //2. Написати програму, яка знаходить мінімальне і максимальне число в масиві.
