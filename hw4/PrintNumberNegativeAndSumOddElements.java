@@ -1,18 +1,27 @@
 package hw4;
 
-/* 4. Написати програму, яка друкує таблицю значень sin(x),
-        де х - від 0 до 360 з кроком 10.(значення мають бути записані в масив за допомогою циклу)*/
-public class TableOfValues {
+public class PrintNumberNegativeAndSumOddElements {
 
-    static void tableOfValues() {
-        double[] array = new double[37];
-        int j = 0;
+    /*   5. Написати програму яка виводить кількість відємних елементів нище головної діагоналі та
+    суму не парних елементів вище головної діагоналі двомірного масиву.*/
+    static void printNumberNegativeAndSumOddElements(int[][] array) {
+
+        int numberOfNegative = 0;
+        int sumOfOddElements = 0;
+
 
         for (int i = 0; i < array.length; i++) {
-            array[i] = Math.sin(j);
-            System.out.println("sin(" + j + ") = " + array[i]);
-
-            j = j + 10;
+            for (int j = 0; j < array[0].length; j++) {
+                if (i < j && array[i][j] % 2 == 0) {
+                    sumOfOddElements += array[i][j];
+                } else if (i > j && array[i][j] < 0) {
+                    numberOfNegative++;
+                }
+            }
         }
+
+        System.out.println("sumOfOddElements = " + sumOfOddElements);
+        System.out.println("numberOfNegative = " + numberOfNegative);
+
     }
 }
