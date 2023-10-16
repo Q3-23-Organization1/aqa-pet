@@ -19,18 +19,16 @@ public class Circle extends Shape {
 
     @Override
     public void calculateArea() {
-        super.calculateArea();
         double area = Math.PI * Math.pow(calculateRadius(), 2);
 
-        System.out.println("circle is: " + area);
+        System.out.println("Area of circle is: " + area);
     }
 
     @Override
     public void calculatePerimeter() {
-        super.calculatePerimeter();
         double perimeter = 2 * Math.PI * calculateRadius();
 
-        System.out.println("circle is: " + perimeter);
+        System.out.println("Perimeter of circle is: " + perimeter);
     }
 
     private double calculateRadius() {

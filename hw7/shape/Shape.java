@@ -2,16 +2,13 @@ package hw7.shape;
 
 import java.util.Objects;
 
-public class Shape {
+public abstract class Shape {
     private String color = "white";
 
-    public void calculateArea() {
-        System.out.print("Area of ");
-    }
+    public abstract void calculateArea();
 
-    public void calculatePerimeter() {
-        System.out.print("Perimeter of ");
-    }
+    public abstract void calculatePerimeter();
+
 
     public void paint() {
         System.out.println("Paint a shape");

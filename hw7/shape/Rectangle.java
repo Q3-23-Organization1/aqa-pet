@@ -11,18 +11,16 @@ public class Rectangle extends Shape {
 
     @Override
     public void calculateArea() {
-        super.calculateArea();
         double area = Math.abs((x2 - x1) * (y2 - y1));
 
-        System.out.println("rectangle is: " + area);
+        System.out.println("Area of rectangle is: " + area);
     }
 
     @Override
     public void calculatePerimeter() {
-        super.calculatePerimeter();
         double perimeter = 2 * (Math.abs(x2 - x1) + Math.abs(y2 - y1));
 
-        System.out.println("rectangle is: " + perimeter);
+        System.out.println("Perimeter of rectangle is: " + perimeter);
     }
 
     @Override

@@ -17,22 +17,20 @@ public class Triangle extends Shape {
 
     @Override
     public void calculateArea() {
-        super.calculateArea();
         double area = 0.5 * Math.abs((x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)));
 
-        System.out.println("triangle is: " + area);
+        System.out.println("Area of triangle is: " + area);
     }
 
     @Override
     public void calculatePerimeter() {
-        super.calculatePerimeter();
         double d1 = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         double d2 = Math.sqrt(Math.pow(x3 - x2, 2) + Math.pow(y3 - y2, 2));
         double d3 = Math.sqrt(Math.pow(x3 - x1, 2) + Math.pow(y3 - y1, 2));
 
         double perimeter = d1 + d2 + d3;
 
-        System.out.println("triangle is: " + perimeter);
+        System.out.println("Perimeter of triangle is: " + perimeter);
     }
 
     @Override
