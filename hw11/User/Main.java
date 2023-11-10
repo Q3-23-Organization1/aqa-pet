@@ -22,9 +22,9 @@ public class Main {
         otherList.forEach(System.out::println);
         System.out.println("-----");
 
-        //Підрахувати ссередній вік юзерів
-        double averageAge = userList.stream().mapToDouble(User::getAge).sum();
-        System.out.println("Average age of users " + averageAge);
+        //Підрахувати середній вік юзерів
+        OptionalDouble averageAge = userList.stream().mapToDouble(User::getAge).average();
+        System.out.println("Average age of users " + averageAge.getAsDouble());
         System.out.println("-----");
 
         //Сортувати по декількам властивостям: firstName і age
