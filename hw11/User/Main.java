@@ -6,6 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+
         //Створити список з 10 обєктів типу User
         List<User> userList = Arrays.asList(
                 new User("John", "Snack", 17),
