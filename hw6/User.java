@@ -3,7 +3,7 @@ package hw6;
 public class User {
 
     String userName = "Incognito";
-    //if user doesn't enter age, we will assume that user is 18 years old
+    //if userBody doesn't enter age, we will assume that userBody is 18 years old
     private int age = 18;
     String email;
     private String password;
