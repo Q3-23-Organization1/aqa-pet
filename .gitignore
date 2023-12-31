@@ -1,3 +1,7 @@
 /out/
 /.idea/
 /QaAutomationJava.iml
+/hw17/target/
+/hw16/target/
+/hw20/target/
+/hw20/allure-results/
